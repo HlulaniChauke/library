@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <section class="modal hidden">
+            <form action="" method="post">
+                <div class="infor">
+                    <label for="title" class="titleName">Title   :</label>
+                    <input type="text" class="txtBox" id="title">
+                </div>
+                <div class="info">
+                    <label for="author" class="name">Author  :</label>
+                    <input type="text" class="txtBox" id="author">
+                </div>
+                <div class="infor"> 
+                    <label for="pages" class="pageNum">Pages   :</label>
+                    <input type="Number" class="txtBox" id="page">
+                </div>
+                <div class="read">
+                    <input type="radio" name="read" value="read" id="haveRead">
+                    <label for="haveRead">Have Read</label>
+                    <input type="radio" name="read" value="not read" id="haveNotRead">
+                    <label for="haveNotRead">Have not yet Read</label>
+                </div>
+                <!-- <div class="infor">
+                    <button class="addNew">Done</button>
+                </div> -->
+            </form>
+
+        </section>
+        <div><button class="addBook">Add New Book</button> </div>
+        <div class="main">
+            <table class="library">
+                <thead>
+                    <tr>
+                        <td class="tableHead">Title</td>
+                        <td class="tableHead">Author</td>
+                        <td class="tableHead">Pages</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    
+    
+</body>
+</html>

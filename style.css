@@ -1,0 +1,55 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+section>form{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    border: 2px solid black ;
+    height: 200px;
+    width: 300px;
+    background-color: gray;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.txtBox{
+    width: 280px;
+    border-radius: 10px;
+}
+
+.addNew{
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 0;
+}
+
+.library{
+    border: 2px solid black;
+    width: 700px;
+}
+.book:nth-child(2n+1){
+    background-color: lightgray;
+}
+
+.main{
+    margin: 2rem;
+}
+
+button{
+    background-color: lightskyblue;
+    color: white;
+    margin-left: 2rem;
+}
+
+tbody>:nth-child(odd) {
+    background-color:lightskyblue;
+
+}
+
+
+  
