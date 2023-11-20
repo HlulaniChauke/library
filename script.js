@@ -18,14 +18,14 @@ for (let i=1; i<6; i++){
     addBookToLibrary("Rosemary"+[i], "Bio", "100");
 }
 
-const tableBooks = document.querySelector("tbody")
+const tableBooks = document.querySelector("tbody");
 function displayEachBook(i){
     //display in a table or individual card
         const row = document.createElement('tr')
         const title = document.createElement('td');
         const author = document.createElement('td');
         const pages = document.createElement('td');
-        const readStatus = document.createElement('button');
+        const readStatus = document.createElement('td');
         const remove = document.createElement('button');
 
         title.textContent = library[i].title;
@@ -60,10 +60,6 @@ removalB.forEach(function(removal) {
 }
 )});
 
-
-    // You can also update your library array if needed
-    // const indexToRemove = Array.from(tableBooks.children).indexOf(parentRow);
-    // library.splice(indexToRemove, 1);
 
 const addNewBookButton = document.querySelector('.addBook');
 
