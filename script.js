@@ -49,16 +49,14 @@ for (let i = 0; i< library.length; i++){
     displayEachBook(i);
 }
 
-const removalB = document.querySelectorAll(".remove-button");
-
-removalB.forEach(function(removal) {
-    removal.addEventListener('click', (e) => {
-    row = removal.parentNode;
-    console.log(row);
-    table = row.parentNode;
-    table.removeChild(row);
-}
-)});
+tableBooks.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.classList.contains('remove-button')) {
+        const row = target.parentNode;
+        const table = row.parentNode;
+        table.removeChild(row);
+    }
+});
 
 
 const addNewBookButton = document.querySelector('.addBook');
