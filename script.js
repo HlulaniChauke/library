@@ -66,10 +66,17 @@ const newTitle = document.getElementById('title');
 const newAuthor = document.getElementById('author');
 const newPages = document.getElementById('page');
 
+
+
 addNewBookButton.addEventListener('click', (e) =>{
+    let pageRegex = /^[1-9]\d*$/;
+    if (pageRegex.test(newPages.value)){
     addBookToLibrary(newAuthor.value, newTitle.value, newPages.value);
     displayEachBook(library.length-1);
     newAuthor.value = "";
     newTitle.value = "";
     newPages.value = 0;
+    }else {
+        alert("Input valid page numbers!");
+    }
 });
