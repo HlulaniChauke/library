@@ -44,6 +44,8 @@ button{
     background-color: lightskyblue;
     color: white;
     margin-left: 2rem;
+    padding: 0.3rem;
+    border-radius: 5px;
 }
 
 tbody>:nth-child(odd) {
