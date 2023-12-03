@@ -1,13 +1,15 @@
 //function for dummy data
 const library = [];
 
-function Book(author, title, pages) {
-  // the constructor...
-  this.author = author;
-  this.title = title;
-  this.pages = pages;
-  this.read = false;
+class Book{
+    constructor(author, title, pages){
+        this.author = author;
+        this.title = title;
+        this.pages = pages;
+        this.read = false;
+    }
 }
+
 // add books to the array
 function addBookToLibrary(author, title, pages) {
   let newBook = new Book(author, title, pages)
@@ -58,17 +60,6 @@ for (let i = 0; i< library.length; i++){
     displayEachBook(i);
     console.log(library[i].read);
 }
-// const readButton = document.getElementsByClassName("readToggle");
-
-// readButton.addEventListener('click', (e) =>{
-//     const target = e.target;
-//     console.log(target.textContent);
-//     if (target.textContent === "Read"){
-//         target.textContent = "Not Read";
-//     }else{
-//         target.textContent = "Read";
-//     }
-// });
 
 tableBooks.addEventListener('click', (e) => {
     const target = e.target;
